@@ -1,0 +1,27 @@
+{
+  "name": "e-farmers-mern",
+  "version": "1.0.0",
+  "description": "E-Farmers Full-Stack MERN Platform",
+  "scripts": {
+    "start": "npm run dev",
+    "dev": "npx concurrently -n \"SERVER,CLIENT\" -c \"green,cyan\" \"npm run server\" \"npm run client\"",
+    "install:all": "npm --prefix server install && npm --prefix client install",
+    "seed": "npm --prefix server run seed",
+    "server": "npm --prefix server run dev",
+    "client": "npm --prefix client run dev"
+  },
+  "keywords": [
+    "mern",
+    "agriculture",
+    "farmers",
+    "pre-order",
+    "react",
+    "express",
+    "mongodb"
+  ],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "concurrently": "^10.0.5"
+  }
+}
